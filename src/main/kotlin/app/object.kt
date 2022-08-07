@@ -1,6 +1,5 @@
 package app
 
-import data.Car
 import data.Person
 
 fun main() {
