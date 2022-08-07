@@ -1,12 +1,18 @@
 package data
 
-class Car(paramBrand: String, paramYear: Int = 2020) {
+class Car {
 
-    init {
-        println("Car has been created")
+    var brand: String = ""
+    var year: Int = 2020
+    var fuel: String = "Solar"
+
+    constructor(paramBrand: String, paramYear: Int) {
+        brand = paramBrand
+        year  = paramYear
     }
 
-    var brand: String = paramBrand
-    var year: Int = paramYear
+    constructor(paramBrand: String, paramYear: Int, paramFuel: String) : this(paramBrand, paramYear) {
+        fuel = paramFuel
+    }
 
 }
