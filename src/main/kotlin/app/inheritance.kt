@@ -13,12 +13,17 @@ fun main() {
     val rajjo = VicePrecident("Rajjo")
     rajjo.sayHello("Azza")
 
-    val shape = Shape()
+    val shape = Shape("Cirlce", 7)
     println(shape.corner)
+    println(shape.name)
+    println(shape.shape)
 
     val rectangle = Rectangle()
     println(rectangle.corner)
     println(rectangle.parentCorner)
+    println(rectangle.name)
+    println(rectangle.shape)
+    println(rectangle.color)
     rectangle.printName()
 
 }
