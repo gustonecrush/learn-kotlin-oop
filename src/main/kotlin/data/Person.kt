@@ -32,6 +32,10 @@ class Person(firstNameParam: String,
         println("Hello $yourName, my name is $firstName")
     }
 
+    fun sayHello(yourName: String, myAddress: String): Unit {
+        println("Hello $yourName, i am from $myAddress")
+    }
+
     fun getFullName(): String {
         return "$firstName $middleName $lastName"
     }

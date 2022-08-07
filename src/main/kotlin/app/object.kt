@@ -13,6 +13,7 @@ fun main() {
     println()
 
     gian.sayHello(farhan.firstName)
+    gian.sayHello("Fiza", "Tanah Putih")
     println(gian.getFullName())
     println(rajjo.getFullName())
 
