@@ -1,15 +1,14 @@
 package app
 
+import data.Car
 import data.Person
 
 fun main() {
 
-    var farhan = Person()
-    farhan.firstName = "Farhan"
-    // farhan.middleName = "Augustiansyah"
-    farhan.lastName = "Ghifary"
+    var farhan = Person("Farhan", "Augustiansyah", "")
+    var mobilio = Car("Honda")
 
-    println(farhan.firstName)
-    println(farhan.middleName)
+    println(mobilio.brand)
+    println(mobilio.year)
 
 }
