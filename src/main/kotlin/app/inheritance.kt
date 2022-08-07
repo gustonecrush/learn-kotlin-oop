@@ -1,6 +1,8 @@
 package app
 
 import data.Manager
+import data.Rectangle
+import data.Shape
 import data.VicePrecident
 
 fun main() {
@@ -10,5 +12,11 @@ fun main() {
 
     val rajjo = VicePrecident("Rajjo")
     rajjo.sayHello("Azza")
+
+    val shape = Shape()
+    println(shape.corner)
+
+    val rectangle = Rectangle()
+    println(rectangle.corner)
 
 }
