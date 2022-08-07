@@ -4,12 +4,12 @@ import data.Person
 
 fun main() {
 
-    val farhan = Person()
-    val rajjo = Person()
-    val gian = Person()
+    var farhan = Person()
+    farhan.firstName = "Farhan"
+    // farhan.middleName = "Augustiansyah"
+    farhan.lastName = "Ghifary"
 
-    println(farhan)
-    println(rajjo)
-    println(gian)
+    println(farhan.firstName)
+    println(farhan.middleName)
 
 }
