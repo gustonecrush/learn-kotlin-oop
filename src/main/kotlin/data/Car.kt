@@ -15,4 +15,8 @@ class Car {
         fuel = paramFuel
     }
 
+    override fun toString(): String {
+        return "Car with name $brand"
+    }
+
 }
