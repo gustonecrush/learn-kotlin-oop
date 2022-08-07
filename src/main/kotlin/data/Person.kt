@@ -1,7 +1,7 @@
 package data
 
 class Person(firstNameParam: String,
-             middleNameParam: String?,
+             middleNameParam: String,
              lastNameParam: String,
              gender: String) {
 
@@ -12,7 +12,7 @@ class Person(firstNameParam: String,
 
     // secondary constructor
     constructor(firstNameParam: String, lastNameParam: String, gender: String) :
-            this(firstNameParam, null, lastNameParam, gender) {
+            this(firstNameParam, "", lastNameParam, gender) {
                 println("Using secondary constructor is success")
             }
 
@@ -23,8 +23,17 @@ class Person(firstNameParam: String,
 
     // properties
     var firstName: String = firstNameParam
-    val middleName: String? = middleNameParam
+    val middleName: String = middleNameParam
     var lastName: String = lastNameParam
     var gender: String = gender
+
+    // functions
+    fun sayHello(yourName: String): Unit {
+        println("Hello $yourName, my name is $firstName")
+    }
+
+    fun getFullName(): String {
+        return "$firstName $middleName $lastName"
+    }
 
 }

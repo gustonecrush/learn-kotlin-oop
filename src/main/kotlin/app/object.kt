@@ -5,10 +5,15 @@ import data.Person
 
 fun main() {
 
-    var farhan = Person("Farhan", "", "Augustiansyah", "male")
+    var farhan = Person("Farhan", "Ghifary", "Augustiansyah", "male")
     println()
     var rajjo  = Person("Rajjo", "Kevin Alvino", "male")
     println()
     var gian   = Person("Gian")
+    println()
+
+    gian.sayHello(farhan.firstName)
+    println(gian.getFullName())
+    println(rajjo.getFullName())
 
 }
